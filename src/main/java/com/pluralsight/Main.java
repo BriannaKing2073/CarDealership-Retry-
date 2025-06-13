@@ -2,6 +2,12 @@ package com.pluralsight;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        DealershipFileManager dfm = new DealershipFileManager();
+        Dealership d = dfm.getDealership();
+        System.out.println(d.getDealershipName());
+        dfm.saveDealership(d);
+
+       // System.out.println(d);
+
     }
 }

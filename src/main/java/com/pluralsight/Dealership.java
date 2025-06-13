@@ -45,17 +45,21 @@ public class Dealership {
         this.dealershipPhone = dealershipPhone;
     }
 //////
+///
+public List<Vehicle> getAllVehicles(){
+    return this.inventory;
+}
 
-    public List<Vehicle> getAllVehicles(){
-        //all maybe add a sort by price or age
-        List<Vehicle> allVehicles = new ArrayList<>();
-        for(Vehicle vehicle : this.inventory){
-            if (!(inventory == null)) {
-                allVehicles.add(vehicle);
-            }
-        }
-        return allVehicles;
-    }
+//    public List<Vehicle> getAllVehicles(){
+//        //all maybe add a sort by price or age
+//        List<Vehicle> allVehicles = new ArrayList<>();
+//        for(Vehicle vehicle : this.inventory){
+//
+//                allVehicles.add(vehicle);
+//
+//        }
+//        return allVehicles;
+//    }
 
     public void addVehicle(Vehicle vehicle){
 
